@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  z-index: 0;
+}
+header .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6vw;
+}
+header img {
+  width: 6vw;
+}
+header a {
+  text-decoration: none;
+  font-size: 4.6vh;
+  color: #A7663E;
+  font-family: "El Messiri";
+}
+header a:hover {
+  color: #CC4B4A;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #FAA85F;
+  color: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "El Messiri";
+  border-radius: 40px;
+  border-color: #FAA85F;
+}
+.button:hover {
+  background-color: #CC4B4A;
+  transition: 300ms;
+  cursor: pointer;
+  border-color: #CC4B4A;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+  font-family: "El Messiri";
+  font-weight: bolder;
+}
+
+.title {
+  font-family: "El Messiri";
+  font-size: 9.5vh;
+  background: linear-gradient(#CC4B4A, #FAA85F, #EEAB57);
+  color: transparent;
+  display: inline-block;
+  background-clip: text;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  color: #A7663E;
+  text-align: justify;
+}
+
+@media screen and (max-width: 810px) {
+  header .flex {
+    gap: 3vw;
+  }
+  header img {
+    width: 11vw;
+  }
+  header a {
+    font-size: 3.5vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    height: 10vh;
+  }
+  header .flex {
+    gap: 4vw;
+  }
+  header img {
+    width: 15vw;
+  }
+  header a {
+    font-size: 3.5vh;
+  }
+}
+.home {
+  width: 100vw;
+  height: 99vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75vw;
+  height: 96vh;
+  margin-top: 4vh;
+}
+.home .home-content .logo-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.home .home-content .logo-text .logoImg {
+  width: 14vw;
+}
+.home .home-content .logo-text p {
+  margin-top: 3vh;
+}
+.home .home-content .text-content {
+  width: 55vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .home-content .text-content .text {
+  font-size: 4vh;
+}
+.home .home-content .button {
+  width: 14vw;
+  height: 7vh;
+  margin-top: 5vh;
+}
+.home .home-content a {
+  font-size: 3.5vh;
+}
+.home .home-image img {
+  height: 97vh;
+  width: 35vw;
+  margin-top: 3vh;
+}
+
+@media screen and (max-width: 810px) {
+  * {
+    overflow-y: hidden;
+  }
+  .home {
+    flex-direction: column;
+    gap: 0vh;
+    position: absolute;
+    z-index: 1;
+    margin-top: 3vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .home .home-content {
+    width: 100vw;
+    height: 70vh;
+    gap: 0vh;
+  }
+  .home .home-content .logo-text {
+    flex-direction: column;
+    gap: 0vh;
+  }
+  .home .home-content .logo-text .logoImg {
+    width: 30vw;
+  }
+  .home .home-content .logo-text p {
+    margin-top: 0vh;
+  }
+  .home .home-content .text-content {
+    width: 85vw;
+    margin-top: -1vh;
+  }
+  .home .home-content .text-content .text {
+    text-align: center;
+    font-size: 3.6vh;
+  }
+  .home .home-content .button {
+    width: 35vw;
+    height: 7vh;
+    margin-top: 3.5vh;
+  }
+  .home .home-image {
+    transform: rotate(90deg);
+    transform-origin: top right;
+    position: absolute;
+    z-index: -1;
+    margin-top: 97vh;
+    margin-left: 100vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home {
+    margin-top: 3vh;
+  }
+  .home .home-content {
+    height: 73vh;
+    margin-top: 5vh;
+  }
+  .home .home-content .text-content {
+    width: 90vw;
+  }
+  .home .home-content .text-content .text {
+    font-size: 3.5vh;
+  }
+  .home .home-content .button {
+    width: 45vw;
+  }
+  .home .home-image {
+    margin-left: 165vw;
+    margin-top: 100vh;
+  }
+  .home .home-image img {
+    width: 30vh;
+  }
+}
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  position: absolute;
+  z-index: 0;
+  margin-top: 10vh;
+}
+nav a {
+  text-decoration: none;
+  color: #A7663E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5vh;
+}
+nav a:hover {
+  color: #CC4B4A;
+}
+
+.contentPalettes {
+  position: absolute;
+  z-index: 1;
+  overflow-y: scroll;
+  margin-top: 15vh;
+  width: 100vw;
+  height: 85vh;
+}
+.contentPalettes section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 85vh;
+  width: 100vw;
+}
+.contentPalettes section .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+}
+.contentPalettes section .text-content .text {
+  width: 50vw;
+  font-size: 4vh;
+  margin-top: 3vh;
+}
+.contentPalettes section .text-content .doubleButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5vw;
+}
+.contentPalettes section .text-content .button {
+  width: 15vw;
+  height: 7.5vh;
+  margin-top: 5vh;
+}
+.contentPalettes section .text-content a {
+  font-size: 3.5vh;
+}
+.contentPalettes section .flower {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentPalettes section .flower img {
+  height: 75vh;
+}
+
+@media screen and (max-width: 810px) {
+  * {
+    overflow-y: hidden;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 6vh;
+  }
+  nav a {
+    font-size: 2.5vh;
+  }
+  .contentPalettes {
+    margin-top: 13vh;
+  }
+  .contentPalettes section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 87vh;
+  }
+  .contentPalettes section .text-content {
+    width: 100vw;
+    height: 39vh;
+  }
+  .contentPalettes section .text-content .title {
+    font-size: 6vh;
+  }
+  .contentPalettes section .text-content .text {
+    width: 95vw;
+    font-size: 2.7vh;
+    margin-top: 0vh;
+    text-align: center;
+  }
+  .contentPalettes section .text-content .button {
+    width: 32vw;
+    height: 6vh;
+    margin: 2vh;
+  }
+  .contentPalettes section .text-content .button a {
+    font-size: 3vh;
+  }
+  .contentPalettes section .flower {
+    width: 100vw;
+    height: 48vh;
+  }
+  .contentPalettes section .flower img {
+    height: 48vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav {
+    gap: 3px;
+    margin-top: 6vh;
+  }
+  nav a {
+    font-size: 1.9vh;
+  }
+  .contentPalettes {
+    margin-top: 12vh;
+  }
+  .contentPalettes section {
+    height: 88vh;
+  }
+  .contentPalettes section .text-content {
+    height: 40vh;
+  }
+  .contentPalettes section .text-content .title {
+    font-size: 4.5vh;
+  }
+  .contentPalettes section .text-content .text {
+    font-size: 2.3vh;
+  }
+  .contentPalettes section .text-content .doubleButton {
+    gap: 3vw;
+  }
+  .contentPalettes section .text-content .button {
+    width: 35vw;
+    height: 5.5vh;
+    margin-top: 1.8vh;
+  }
+  .contentPalettes section .text-content .button a {
+    font-size: 3.2vh;
+  }
+}
+@media screen and (max-width: 370px) {
+  .contentPalettes section .text-content .button {
+    margin-top: 1.4vh;
+  }
+}
+.gen {
+  position: absolute;
+  z-index: 1;
+  margin-top: 5vh;
+  width: 100vw;
+  height: 95vh;
+}
+.gen .conf {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.gen .conf .centTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 3vh;
+}
+.gen .conf .button-set {
+  width: 100vw;
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.gen .conf .button-set .button {
+  width: 10vw;
+  height: 5.2vh;
+  font-size: 3.3vh;
+  font-weight: bold;
+}
+.gen .conf .button-set .mobile-neon-pastel-buttons {
+  display: none;
+  gap: 1vw;
+}
+.gen .conf .button-set .mobile-neon-pastel-buttons .button {
+  border-radius: 50%;
+  width: 2.5vw;
+}
+.gen .conf .color-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  width: 50vw;
+  height: 38vh;
+}
+.gen .conf .color-selector .main-color {
+  background-color: #00ffff;
+  width: 25%;
+  height: 70%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.gen .conf .color-selector .main-color .color-hex {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.7vh;
+  color: #000000;
+}
+.gen .conf .color-selector .inputHue {
+  position: relative;
+  width: 16vw;
+  height: 3vh;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple, magenta, red);
+}
+.gen .conf .color-selector .inputHue input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+.gen .conf .color-selector .inputHue input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.gen .conf .color-selector .inputSaturation {
+  position: relative;
+  width: 16vw;
+  height: 3vh;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #808080, #00ffff);
+}
+.gen .conf .color-selector .inputSaturation input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-radius: 20px;
+}
+.gen .conf .color-selector .inputSaturation input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.gen .conf .color-selector .inputLightness {
+  position: relative;
+  width: 16vw;
+  height: 3vh;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #000000, #00ffff, #FFFFFF);
+}
+.gen .conf .color-selector .inputLightness input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-radius: 20px;
+}
+.gen .conf .color-selector .inputLightness input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.gen .conf .aux-colors {
+  display: none;
+  align-items: center;
+  justify-content: start;
+  gap: 5vw;
+  width: 50vw;
+  height: 38vh;
+}
+.gen .conf .aux-colors .aux-color {
+  background-color: #d9d9d9;
+  width: 22%;
+  height: 60%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.gen .conf .aux-colors .aux-color .aux-color-hex {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.7vh;
+  color: #000000;
+}
+.gen .palette {
+  margin-top: 3vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  width: 100vw;
+  height: 20vh;
+}
+.gen .palette .palette-colors {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 11%;
+  height: 100%;
+}
+.gen .palette .palette-colors .palette-colors-hex {
+  font-size: 2.5vh;
+}
+.gen .web-neon-pastel-buttons {
+  margin-top: 2vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+.gen .web-neon-pastel-buttons button {
+  width: 10vw;
+  height: 5.2vh;
+  font-family: "El Messiri";
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 810px) {
+  .gen {
+    height: 95vh;
+  }
+  .gen .conf {
+    height: 65vh;
+  }
+  .gen .conf .centTitle {
+    margin-top: -1vh;
+  }
+  .gen .conf .centTitle .title {
+    font-size: 6.5vh;
+  }
+  .gen .conf .color-selector {
+    margin-top: -13vh;
+    gap: 1.5vh;
+  }
+  .gen .conf .color-selector .main-color {
+    width: 56%;
+    height: 48%;
+  }
+  .gen .conf .color-selector .inputHue {
+    width: 38vw;
+    height: 2vh;
+  }
+  .gen .conf .color-selector .inputLightness {
+    width: 38vw;
+    height: 2vh;
+  }
+  .gen .conf .color-selector .inputSaturation {
+    width: 38vw;
+    height: 2vh;
+  }
+  .gen .conf .aux-colors {
+    margin-top: -13vh;
+    row-gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+  }
+  .gen .conf .aux-colors .aux-color {
+    width: 14.5vh;
+    height: 14.5vh;
+  }
+  .gen .conf .aux-colors .aux-color .aux-color-hex {
+    font-size: 2.3vh;
+  }
+  .gen .conf .button-set {
+    gap: 1vh;
+    margin-top: -10vh;
+  }
+  .gen .conf .button-set .button {
+    width: 30vw;
+    height: 6vh;
+  }
+  .gen .conf .button-set .mobile-neon-pastel-buttons .button {
+    width: 10vw;
+  }
+  .gen .palette {
+    margin-top: -6vh;
+    height: 35vh;
+    gap: 1vh;
+    row-gap: 0.2vh;
+  }
+  .gen .palette .palette-colors {
+    width: 22%;
+    height: 15vh;
+  }
+  .gen .palette .palette-colors .palette-colors-hex {
+    font-size: 2vh;
+  }
+  .gen .web-neon-pastel-buttons {
+    display: none;
+  }
+  .gen .web-neon-pastel-buttons .button {
+    width: 30vw;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  .gen .conf {
+    gap: 0vh;
+  }
+  .gen .conf .centTitle {
+    margin-top: -3vh;
+  }
+  .gen .conf .centTitle .title {
+    font-size: 5vh;
+  }
+  .gen .conf .color-selector {
+    margin-top: -17vh;
+  }
+  .gen .conf .color-selector .main-color {
+    width: 70%;
+    height: 43%;
+  }
+  .gen .conf .color-selector .inputHue {
+    width: 44vw;
+    height: 2.1vh;
+  }
+  .gen .conf .color-selector .inputLightness {
+    width: 44vw;
+    height: 2.1vh;
+  }
+  .gen .conf .color-selector .inputSaturation {
+    width: 44vw;
+    height: 2.1vh;
+  }
+  .gen .conf .aux-colors {
+    margin-top: -16vh;
+  }
+  .gen .conf .aux-colors .aux-color {
+    width: 13vh;
+    height: 13vh;
+  }
+  .gen .conf .aux-colors .aux-color .aux-color-hex {
+    font-size: 2vh;
+  }
+  .gen .conf .button-set {
+    margin-top: -25vh;
+  }
+  .gen .conf .button-set .button {
+    width: 38vw;
+  }
+  .gen .conf .button-set .mobile-neon-pastel-buttons .button {
+    width: 13vw;
+  }
+  .gen .palette {
+    margin-top: -15vh;
+    height: 35vh;
+    row-gap: 0.1vh;
+  }
+  .gen .palette .palette-colors {
+    width: 24%;
+    height: 11vh;
+  }
+  .gen .palette .palette-colors .palette-colors-hex {
+    font-size: 1.8vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,354 @@
+.gen{
+    position: absolute;
+    z-index: 1;
+    margin-top: 5vh;
+    width: 100vw;
+    height: 95vh;
+    .conf{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .centTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            margin-top: 3vh;
+        }
+        .button-set{
+            width: 100vw;
+            display: flex;
+            margin-top: 2vh;
+            align-items: center;
+            justify-content: center;
+            gap: 1vw;
+            .button{
+                width: 10vw;
+                height: 5.2vh;
+                font-size: 3.3vh;
+                font-weight: bold;
+            }
+            .mobile-neon-pastel-buttons{
+                display: none;
+                gap: 1vw;
+                .button{
+                    border-radius: 50%;
+                    width: 2.5vw;
+                }
+            }
+        }
+        .color-selector{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2vh;
+            width: 50vw;
+            height: 38vh;
+            .main-color{
+                background-color: #00ffff;
+                width: 25%;
+                height: 70%;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                .color-hex{
+                    font-family: $montserrat;
+                    font-size: 2.7vh;
+                    color: #000000;
+                }
+            }
+            .inputHue{
+                position: relative;
+                width: 16vw;
+                height: 3vh;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple, magenta, red);
+                input{
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 2;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 1px;
+                        height: 1px;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .inputSaturation{
+                position: relative;
+                width: 16vw;
+                height: 3vh;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                background: linear-gradient(to right, #808080, #00ffff);
+                input{
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 2;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 1px;
+                        height: 1px;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .inputLightness{
+                position: relative;
+                width: 16vw;
+                height: 3vh;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                background: linear-gradient(to right, #000000, #00ffff, #FFFFFF);
+                input{
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 2;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 1px;
+                        height: 1px;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .aux-colors{
+            display: none;
+            align-items: center;
+            justify-content: start;
+            gap: 5vw;
+            width: 50vw;
+            height: 38vh;
+            .aux-color{
+                background-color: #d9d9d9;
+                width: 22%;
+                height: 60%;
+                border-radius: 20px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                .aux-color-hex{
+                    font-family: $montserrat;
+                    font-size: 2.7vh;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .palette{
+        margin-top: 3vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1vw;
+        width: 100vw;
+        height: 20vh;
+        .palette-colors{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            font-family: $montserrat;
+            background-color: #d9d9d9;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            width: 11%;
+            height: 100%;
+            .palette-colors-hex{
+                font-size: 2.5vh;
+            }
+        }
+    }
+    .web-neon-pastel-buttons{
+        margin-top: 2vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        button{
+            width: 10vw;
+            height: 5.2vh;
+            font-family: $elMessiri;
+            font-size: 3vh;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .gen{
+        height: 95vh;
+        .conf{
+            height: 65vh;
+            .centTitle{
+                margin-top: -1vh;
+                .title{
+                    font-size: 6.5vh;
+                }
+            }
+            .color-selector{
+                margin-top: -13vh;
+                gap: 1.5vh;
+                .main-color{
+                    width: 56%;
+                    height: 48%;
+                }
+                .inputHue{
+                    width: 38vw;
+                    height: 2vh;
+                }
+                .inputLightness{
+                    width: 38vw;
+                    height: 2vh;
+                }
+                .inputSaturation{
+                    width: 38vw;
+                    height: 2vh;
+                }
+            }
+            .aux-colors{
+                margin-top: -13vh;
+                row-gap: 2vh;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                width: 50%;
+                .aux-color{
+                    width: 14.5vh;
+                    height: 14.5vh;
+                    .aux-color-hex{
+                        font-size: 2.3vh;
+                    }
+                }
+            }
+            .button-set{
+                gap: 1vh;
+                margin-top: -10vh;
+                .button{
+                    width: 30vw;
+                    height: 6vh;
+                }
+                .mobile-neon-pastel-buttons{
+                    .button{
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+
+        .palette{
+            margin-top: -6vh;
+            height: 35vh;
+            gap: 1vh;
+            row-gap: 0.2vh;
+            .palette-colors{
+                width: 22%;
+                height: 15vh;
+                .palette-colors-hex{
+                    font-size: 2vh;
+                }
+            }
+        }
+        .web-neon-pastel-buttons{
+            display: none;
+            .button{
+                width: 30vw;
+                height: 6vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px){
+    .gen{
+        .conf{
+            gap: 0vh;
+            .centTitle{
+                margin-top: -3vh;
+                .title{
+                    font-size: 5vh;
+                }
+            }
+            .color-selector{
+                margin-top: -17vh;
+                .main-color{
+                    width: 70%;
+                    height: 43%;
+                }
+                .inputHue{
+                    width: 44vw;
+                    height: 2.1vh;
+                }
+                .inputLightness{
+                    width: 44vw;
+                    height: 2.1vh;
+                }
+                .inputSaturation{
+                    width: 44vw;
+                    height: 2.1vh;
+                }
+            }
+            .aux-colors{
+                margin-top: -16vh;
+                .aux-color{
+                    width: 13vh;
+                    height: 13vh;
+                    .aux-color-hex{
+                        font-size: 2vh;
+                    }
+                }
+            }
+            .button-set{
+                margin-top: -25vh;
+                .button{
+                    width: 38vw;
+                }
+                .mobile-neon-pastel-buttons{
+                    .button{
+                        width: 13vw;
+                    }
+                }
+            }
+        }
+        .palette{
+            margin-top: -15vh;
+            height: 35vh;
+            row-gap: 0.1vh;
+            .palette-colors{
+                width: 24%;
+                height: 11vh;
+                .palette-colors-hex{
+                    font-size: 1.8vh;
+                }
+            }
+        }
+    }
+}

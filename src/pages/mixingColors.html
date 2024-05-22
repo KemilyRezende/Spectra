@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="website icon" href="../img/logo/logo.png">
+    <title>Spectra - Mixing Colors</title>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div><img class="logo" src="../img/logo/logo.png" alt=""></div>
+            <div class="button-home"><a href="../../index.html">Home</a></div>
+            <div class="button-CP"><a href="./colorPalettes.html">Color Palettes</a></div>
+        </div>
+    </header>
+    <main class="gen">
+        <div class="conf">
+            <div class="centTitle"><h1 class="title">Mixing Colors</h1></div>
+            <div class="color-selector">
+                <div class="main-color" id="mainColor">
+                    <p id="mainColorHex" class="color-hex"></p>
+                </div>
+                <div class="inputHue"><input id="hue" class="hue" type="range" min="0" max="360"></div>
+                <div class="inputSaturation"><input id="saturation" class="saturation" type="range" min="0" max="100"></div>
+                <div class="inputLightness"><input id="lightness" class="lightness" type="range" min="0" max="100"></div>
+            </div>
+            <div class="color-selector">
+                <div class="main-color" id="mainColor2">
+                    <p id="mainColorHex2" class="color-hex"></p>
+                </div>
+                <div class="inputHue"><input id="hue2" class="hue" type="range" min="0" max="360"></div>
+                <div class="inputSaturation"><input id="saturation2" class="saturation" type="range" min="0" max="100"></div>
+                <div class="inputLightness"><input id="lightness2" class="lightness" type="range" min="0" max="100"></div>
+            </div>
+            <div class="button-set">
+                <button onclick="mixingColors()" class="button">Create</button>
+                <div id="mobileButtons" class="mobile-neon-pastel-buttons">
+                    <button onclick="turnNeon()" class="button">N</button>
+                    <button onclick="turnPastel()" class="button">P</button>
+                </div>
+            </div>
+        </div>
+        <div id="palette" class="palette">
+            <div id="color1" class="palette-colors"><p id="colorHex1" class="palette-colors-hex"></p></div>
+            <div id="color2" class="palette-colors"><p id="colorHex2" class="palette-colors-hex"></p></div>
+            <div id="color3" class="palette-colors"><p id="colorHex3" class="palette-colors-hex"></p></div>
+            <div id="color4" class="palette-colors"><p id="colorHex4" class="palette-colors-hex"></p></div>
+            <div id="color5" class="palette-colors"><p id="colorHex5" class="palette-colors-hex"></p></div>
+            <div id="color6" class="palette-colors"><p id="colorHex6" class="palette-colors-hex"></p></div>
+            <div id="color7" class="palette-colors"><p id="colorHex7" class="palette-colors-hex"></p></div>
+        </div>
+        <div id="webButtons" class="web-neon-pastel-buttons">
+            <button onclick="turnNeon()" class="button">Neon</button>
+            <button onclick="turnPastel()" class="button">Pastel</button>
+        </div>
+    </main>
+    <script src="../js/functions.js"></script>
+</body>
+</html>

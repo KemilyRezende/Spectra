@@ -1,0 +1,169 @@
+nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    position: absolute;
+    z-index: 0;
+    margin-top: 10vh;
+    a{
+        text-decoration: none;
+        color: $color-dark-brown;
+        font-family: $montserrat;
+        font-size: 3.5vh;
+    }
+    a:hover{
+        color: $color-red;
+    }
+}
+.contentPalettes{
+    position: absolute;
+    z-index: 1;
+    overflow-y: scroll;
+    margin-top: 15vh;
+    width: 100vw;
+    height: 85vh;
+    section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 85vh;
+        width: 100vw;
+        .text-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60vw;
+            .text{
+                width: 50vw;
+                font-size: 4vh;
+                margin-top: 3vh;
+            }
+            .doubleButton{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 5vw;
+            }
+            .button{
+                width: 15vw;
+                height: 7.5vh;
+                margin-top: 5vh;
+            }
+            a {
+                font-size: 3.5vh;
+            }
+        }
+        .flower{
+            width: 40vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 75vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    *{
+        overflow-y: hidden;
+    }
+    nav{
+        flex-wrap: wrap;
+        gap: 2px;
+        margin-top: 6vh;
+        a{
+            font-size: 2.5vh;
+        }
+    }
+    .contentPalettes{
+        margin-top: 13vh;
+        section{
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: 87vh;
+            .text-content{
+                width: 100vw;
+                height: 39vh;
+                .title{
+                    font-size: 6vh;
+                }
+                .text{
+                    width: 95vw;
+                    font-size: 2.7vh;
+                    margin-top: 0vh;
+                    text-align: center;
+                }
+                .button{
+                    width: 32vw;
+                    height: 6vh;
+                    margin: 2vh;
+                    a{
+                        font-size: 3vh;
+                    }
+                }
+            }
+            .flower{
+                width: 100vw;
+                height: 48vh;
+                img{
+                    height: 48vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav{
+        gap: 3px;
+        margin-top: 6vh;
+        a{
+            font-size: 1.9vh;
+        }
+    }
+    .contentPalettes{
+        margin-top: 12vh;
+        section{
+            height: 88vh;
+            .text-content{
+                height: 40vh;
+                .title{
+                    font-size: 4.5vh;
+                }
+                .text{
+                    font-size: 2.3vh;
+                }
+                .doubleButton{
+                    gap: 3vw;
+                }
+                .button{
+                    width: 35vw;
+                    height: 5.5vh;
+                    margin-top: 1.8vh;
+                    a{
+                        font-size: 3.2vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px){
+    .contentPalettes{
+        section{
+            .text-content{
+                .button{
+                    margin-top: 1.4vh;
+                }
+            }
+        }
+    }
+}

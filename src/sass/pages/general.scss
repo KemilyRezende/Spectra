@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+$elMessiri: "El Messiri";
+$montserrat: "Montserrat", sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: absolute;
+    z-index: 0;
+    .flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.6vw;
+    }
+    img{
+        width: 6vw;
+    }
+    a{
+        text-decoration: none;
+        font-size: 4.6vh;
+        color: $color-dark-brown;
+        font-family: $elMessiri;
+    }
+    a:hover{
+        color: $color-red;
+        transition: 300ms;
+        cursor: pointer;
+    }
+}
+.button{
+    background-color: $color-orange;
+    color: $color-white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: $elMessiri;
+    border-radius: 40px;
+    border-color: $color-orange;
+    &:hover{
+        background-color: $color-red;
+        transition: 300ms;
+        cursor: pointer;
+        border-color: $color-red;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: $elMessiri;
+        font-weight: bolder;
+    }
+}
+.title{
+    font-family: $elMessiri;
+    font-size: 9.5vh;
+    background: linear-gradient( $color-red, $color-orange, $color-yellow);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.text{
+    font-family: $montserrat;
+    color: $color-dark-brown;
+    text-align: justify;
+}
+@media screen and (max-width: 810px){
+    header{
+        .flex{
+            gap: 3vw;
+        }
+        img{
+            width: 11vw;
+        }
+        a{
+            font-size: 3.5vh;
+        }
+    }
+}
+@media screen and (max-width: 430px){
+    header{
+        height: 10vh;
+        .flex{
+            gap: 4vw;
+        }
+        img{
+            width: 15vw;
+        }
+        a{
+            font-size: 3.5vh;
+        }
+    }
+}
