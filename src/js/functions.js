@@ -484,7 +484,7 @@ function calculateHue(hue1, hue2, per1, per2, i){
     hue1 = (hue1 % 360 + 360) % 360;
     hue2 = (hue2 % 360 + 360) % 360;
 
-     if (Math.abs(hue1 - hue2) === 180) {
+     if (Math.abs(hue1 - hue2) > 170 && Math.abs(hue1 - hue2) < 190) {
         var num = [0, 1, 2, 3, 4, 5, 6];
         return (hue1+(num[i-1]*30));
     }
