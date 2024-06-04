@@ -314,7 +314,7 @@ nav a:hover {
   .contentPalettes section {
     flex-direction: column-reverse;
     justify-content: center;
-    height: 87vh;
+    height: 85vh;
   }
   .contentPalettes section .text-content {
     width: 100vw;
@@ -355,9 +355,6 @@ nav a:hover {
   }
   .contentPalettes {
     margin-top: 12vh;
-  }
-  .contentPalettes section {
-    height: 88vh;
   }
   .contentPalettes section .text-content {
     height: 40vh;
