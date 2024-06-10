@@ -369,8 +369,8 @@ nav a:hover {
     font-size: 1.9vh;
   }
   .contentPalettes {
-    margin-top: 14vh;
-    height: 83vh;
+    margin-top: 15vh;
+    height: 80vh;
   }
   .contentPalettes section .text-content {
     height: 40vh;
@@ -391,6 +391,13 @@ nav a:hover {
   }
   .contentPalettes section .text-content .button a {
     font-size: 3.2vh;
+  }
+  .contentPalettes section .flower {
+    width: 100vw;
+    height: 41vh;
+  }
+  .contentPalettes section .flower img {
+    height: 41vh;
   }
 }
 @media screen and (max-width: 370px) {
