@@ -369,7 +369,8 @@ nav a:hover {
     font-size: 1.9vh;
   }
   .contentPalettes {
-    margin-top: 12vh;
+    margin-top: 14vh;
+    height: 83vh;
   }
   .contentPalettes section .text-content {
     height: 40vh;
